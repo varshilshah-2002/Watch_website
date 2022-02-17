@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Smart Watch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="flex1">
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="navMenu">
+        <a href="index.html" class="homeNavItem navItem">Home</a>
+        <a href="index.html#about" class="aboutNavItem navItem">About</a>
+        <a href="Products.html#features" class="featuresNavItem navItem">Features</a>
+        <a href="Products.html#product" class="productNavItem navItem">Product</a>
+        <a href="Products.html#testimonial" class="testimonialNavItem navItem">Testimonial</a>
+        <a href="Contact.html#faq" class="faqNavItem navItem">FQA</a>
+        <a href="Contact.html#contact" class="contactNavItem navItem">Contact</a>
+      </div>
+      <i class="fas fa-bars hamburger"></i>
+    </nav>
+  </header>
+
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".navMenu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+
+
+  <main>
+
+    <section class="faq  background" id="faq">
+      <div class="container">
+        <div class="heading1">
+          <h2>Asked Questions </h2>
+          <p>Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His secure called esteem praise. </p>
+        </div>
+
+        <div class="content">
+          <div class="accordionWrapper flex">
+            <div class="left">
+              <div class="accordionItem open">
+                <h2 class="accordionItemHeading">What is the difference between the watches that have only gps and the ones with gps+cellular ? <i class="fa fa-plus"></i> </h2>
+                <div class="accordionItemContent">
+                  <p>There's some well-meaning but incorrect info in the answers so hopefully this is more clear: GPS+Cellular models do not "have to" have cellular service, you can choose to buy that model for later cellular use but still use the Apple Watch in the meantime without cellular for all its other functions. </p>
+                </div>
+              </div>
+
+
+
+              <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Can I pair this watch with iPhone ? <i class="fa fa-plus"></i> </h2>
+                <div class="accordionItemContent">
+                  <p>Yes, but to put it simply; Apple and Android in general don't normally get along. While Apple has contracted Samsung to make screens for the iPhone, you're still going to get best performance with an Apple Watch and an iPhone or a Samsung (or better) and this smart watch.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Do I need to have a separate data plan<br> or add this as a
+                   device on my wireless phone plan in order to use or to make calls ?   <i class="fa fa-plus"></i> </h2>
+                <div class="accordionItemContent">
+                  <p>The Bluetooth version does not require a data plan as it communicates through your phone. LTE version requires a data plan to use as a stand alone.</p>
+                </div>
+              </div>
+
+
+
+
+              <div class="accordionItem close">
+                <h2 class="accordionItemHeading">Does it track your sleep, light, rem, deep, awake ? <i class="fa fa-plus"></i> </h2>
+                <div class="accordionItemContent">
+                  <p>Sure it does. After the watch is connected with your phone, you can check your light/deep sleep and awake hours via our official app "Veryfitpro".</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script>
+      var accItem = document.getElementsByClassName('accordionItem');
+      var accHD = document.getElementsByClassName('accordionItemHeading');
+      for (i = 0; i < accHD.length; i++) {
+        accHD[i].addEventListener('click', toggleItem, false);
+      }
+
+      function toggleItem() {
+        var itemClass = this.parentNode.className;
+        for (i = 0; i < accItem.length; i++) {
+          accItem[i].className = 'accordionItem close';
+        }
+        if (itemClass == 'accordionItem close') {
+          this.parentNode.className = 'accordionItem open';
+        }
+      }
+    </script>
+
+    <section class="contact background2" id="contact">
+      <div class="container flex">
+        <div class="left">
+          <form class="">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Your Email ">
+            <input type="text" placeholder="Your Phone Number ">
+            <textarea name="name" rows="5" cols="80">Write Your Message Here....</textarea>
+            <input type="submit" name="" value="Send Message">
+          </form>
+        </div>
+        <div class="right">
+          <h2>Contact Us </h2>
+          <p>Submit an application for a repair, check your warranty, or get quotes for spare parts. Search for hot issues, help you to identify the problem, provide you the effective solution.<br><br> DO CHECK THE FAQ'S SECTION FOR THE FREQUENTLY ASKED QUERIES BY THE CUSTOMERS, IF YOU DONT FIND YOUR ANSWERS THERE PLEASE FEEL FREE TO WRITE YOUR QUERIES TO US.</p><br><br>
+          <div class="text">
+            <h3>Head Office</h3>
+            <i class="fas fa-map-marker-alt"></i>
+            <label>Amsterdam, NY 12010</label> <br><br>
+
+            <i class="fas fa-phone"></i>
+            <label>+977 9813253081</label> <br><br>
+
+            <i class="fas fa-envelope"></i>
+            <label>demoexample@gmail.com</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe background2">
+      <div class="container">
+        <div class="heading">
+          <h2>Subscribe To Get Updates </h2>
+          <p>Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His secure called esteem praise. </p>
+
+          <div class="input flex1">
+            <input type="text" placeholder="Your email address....">
+            <button>Subscribe <i class="far fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+  <script>
+    function selectElementByClass(className) {
+      return document.querySelector(`.${className}`);
+    }
+
+    const sections = [
+      selectElementByClass('home'),
+      selectElementByClass('about'),
+      selectElementByClass('features'),
+      selectElementByClass('product'),
+      selectElementByClass('testimonial'),
+      selectElementByClass('faq'),
+      selectElementByClass('contact'),
+    ];
+
+    const navItems = {
+      home: selectElementByClass('homeNavItem'),
+      about: selectElementByClass('aboutNavItem'),
+      features: selectElementByClass('featuresNavItem'),
+      product: selectElementByClass('productNavItem'),
+      testimonial: selectElementByClass('testimonialNavItem'),
+      faq: selectElementByClass('faqNavItem'),
+      contact: selectElementByClass('contactNavItem'),
+    };
+
+    // intersection observer setup
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    function observerCallback(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // get the nav item corresponding to the id of the section
+          // that is currently in view
+          const navItem = navItems[entry.target.id];
+          // add 'active' class on the navItem
+          navItem.classList.add('active');
+          // remove 'active' class from any navItem that is not
+          // same as 'navItem' defined above
+          Object.values(navItems).forEach((item) => {
+            if (item != navItem) {
+              item.classList.remove('active');
+            }
+          });
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach((sec) => observer.observe(sec));
+  </script>
+  <footer>
+    <div class="scontainer grid1">
+      <div class="box1">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>+ 123 456 7898</h1>
+        <small>Email : varshil.220202@gmail.com</small>
+      </div>
+
+      <div class="box1">
+        <h3>Customer Services</h3>
+        <div class="flex1">
+          <ul>
+            <li>Help</li>
+            <li>Contact Us</li>
+            <li>Warranty</li>
+            <li>Terms & Conditions</li>
+            <li>Shopping information</li>
+            <li>Gift Vocher</li>
+          </ul>
+          <ul>
+            <li>My Account</li>
+            <li>Order Status </li>
+            <li>Payment</li>
+            <li>Orders </li>
+            <li>Cancellation </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box1">
+        <h3>Let's stay in touch</h3>
+        <div class="input flex1">
+          <input type="email" placeholder="Email Address">
+          <i class="far fa-long-arrow-right"></i>
+        </div>
+        <p>Get Update on sales specials and more</p>
+        <div class="social_media">
+          <i class="fab  fa-facebook-f"></i>
+          <i class="fab  fa-instagram"></i>
+          <i class="fab  fa-twitter"></i>
+          <i class="fab  fa-youtube"></i>
+          <i class="fab  fa-google"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

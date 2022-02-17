@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Smart Watch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="flex1">
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="navMenu">
+        <a href="index.html" class="homeNavItem navItem">Home</a>
+        <a href="index.html#about" class="aboutNavItem navItem">About</a>
+        <a href="Products.html#features" class="featuresNavItem navItem">Features</a>
+        <a href="Products.html#product" class="productNavItem navItem">Product</a>
+        <a href="Products.html#testimonial" class="testimonialNavItem navItem">Testimonial</a>
+        <a href="Contact.html#faq" class="faqNavItem navItem">FQA</a>
+        <a href="Contact.html#contact" class="contactNavItem navItem">Contact</a>
+      </div>
+      <i class="fas fa-bars hamburger"></i>
+    </nav>
+  </header>
+
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".navMenu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+  </script>
+
+
+  <main>
+    <section class="home background" id="home">
+      <div class="container flex1">
+        <div class="left">
+          <h1> Time For The Change In Smartwatch Indusrties </h1>
+          <p> It is not just a company.
+Discover our unique approach
+to watchmaking through our ongoing story. </p>
+          <button>BUY NOW</button>
+        </div>
+        <div class="right  mtop">
+          <div class="img_animation1">
+            <img src="image/p.png" alt="">
+          </div>
+          <div class="text">
+            <h2> <span>50%</span>Off </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="about background2" id="about">
+      <div class="container">
+        <div class="heading">
+          <h2>Outstanding Core Features Of Our Product </h2>
+          <p>Time to Trust explores the connections between the worlds of arts and crafts in an ongoing quest to combine artistic excellence and technical mastery. </p>
+        </div>
+
+        <div class="content mtop flex">
+          <div class="left mtop1">
+            <img src="image/watch.png" alt="">
+          </div>
+          <div class="right grid">
+            <div class="box">
+<i class="fas fa-fingerprint"></i>              <h3>
+SpO2 Monitor </h3>
+              <p>Track Oxygen Saturation Levels in the Bloodstream.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-mobile"></i>
+              <h3>Use Your Wrist like a Phone </h3>
+              <p>Stay connected with friends, colleagues, and loved ones right on your wrist.</p>
+            </div>
+            <div class="box">
+              <i class="fas fa-suitcase"></i>
+              <h3>Own Every Mile</h3>
+              <p>The built-in running app comes with 13 different running courses with real-time Voice Over guidance.</p>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+    <section class="about background" id="about">
+      <div class="container">
+        <div class="heading">
+          <h2>About The Product </h2>
+          <p>Our Smart Watch Offers You With The Top Notch Technology For Your Convenience And Availability Of All Your Needs On Your Wrist !! </p>
+        </div>
+
+        <div class="content mtop flex">
+          <div class="left">
+            <div class="features_box flex">
+              <div class="img">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="text">
+                <h3> GPS System Tracking</h3>
+                <p> New had happen unable uneasy. Drawings pronounce can be followed improved out. </p>
+              </div>
+            </div>
+            <div class="features_box flex">
+              <div class="img">
+                <i class="fas fa-wifi"></i>
+              </div>
+              <div class="text">
+                <h3>WiFi Data Sync</h3>
+                <p> New had happen unable uneasy. Drawings pronounce can be followed improved out. </p>
+              </div>
+            </div>
+            <div class="features_box flex">
+              <div class="img">
+                <i class="fas fa-bold"></i>
+              </div>
+              <div class="text">
+                <h3> Blood Pressure Management</h3>
+                <p> New had happen unable uneasy. Drawings pronounce can be followed improved out. </p>
+              </div>
+            </div>
+            <div class="features_box flex">
+              <div class="img">
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="text">
+                <h3> Weather Update</h3>
+                <p> New had happen unable uneasy. Drawings pronounce can be followed improved out. </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="right">
+            <div class="img_animation">
+              <img src="image/core.png" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="wrapper background2">
+      <div class="container flex">
+        <div class="left">
+          <h2>Why Choose Us</h2>
+          <p>Luxury goods like watches need not be expensive and this is the reason why we have decided to establish our company. We are here to offer a perfect combination of quality and competitive pricing.</p>
+          <div class="content grid">
+            <div class="box flex">
+              <i class="far fa-check-circle"></i>
+              <h3>1 Year Guarantee</h3>
+            </div>
+            <div class="box flex">
+              <i class="far fa-check-circle"></i>
+              <h3>Free Shipping</h3>
+            </div>
+            <div class="box flex">
+              <i class="far fa-check-circle"></i>
+              <h3>Product Return</h3>
+            </div>
+            <div class="box flex">
+              <i class="far fa-check-circle"></i>
+              <h3>Dedicated Support</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="img1">
+            <img src="image/about_main.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="product testimonial background" id="testimonial">
+      <div class="container">
+        <div class="heading">
+          <h2>Our Awesome Products </h2>
+          <p>Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His secure called esteem praise. </p>
+        </div>
+
+        <div class="content grid mtop">
+          <div class="box">
+            <div class="box_img">
+              <img src="image/t2.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <h3>Natha Roy</h3>
+              <p>CEO of Apple</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_img">
+              <img src="image/t1.jpg" alt="">
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <h3>Natha Roy</h3>
+              <p>CEO of Apple</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+    <section class="subscribe background2">
+      <div class="container">
+        <div class="heading">
+          <h2>Subscribe To Get Updates </h2>
+          <p>Prepared is me marianne pleasure likewise debating. Wonder an unable except better stairs do ye admire. His secure called esteem praise. </p>
+
+          <div class="input flex1">
+            <input type="text" placeholder="Your email address....">
+            <button>Subscribe <i class="far fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+  <script>
+    function selectElementByClass(className) {
+      return document.querySelector(`.${className}`);
+    }
+
+    const sections = [
+      selectElementByClass('home'),
+      selectElementByClass('about'),
+      selectElementByClass('features'),
+      selectElementByClass('product'),
+      selectElementByClass('testimonial'),
+      selectElementByClass('faq'),
+      selectElementByClass('contact'),
+    ];
+
+    const navItems = {
+      home: selectElementByClass('homeNavItem'),
+      about: selectElementByClass('aboutNavItem'),
+      features: selectElementByClass('featuresNavItem'),
+      product: selectElementByClass('productNavItem'),
+      testimonial: selectElementByClass('testimonialNavItem'),
+      faq: selectElementByClass('faqNavItem'),
+      contact: selectElementByClass('contactNavItem'),
+    };
+
+    // intersection observer setup
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    function observerCallback(entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // get the nav item corresponding to the id of the section
+          // that is currently in view
+          const navItem = navItems[entry.target.id];
+          // add 'active' class on the navItem
+          navItem.classList.add('active');
+          // remove 'active' class from any navItem that is not
+          // same as 'navItem' defined above
+          Object.values(navItems).forEach((item) => {
+            if (item != navItem) {
+              item.classList.remove('active');
+            }
+          });
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach((sec) => observer.observe(sec));
+  </script>
+
+
+    <footer>
+      <div class="scontainer grid1">
+        <div class="box1">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <p> It is not just a company. Discover our unique approach to watchmaking through our ongoing story.</p>
+          <h1>+ 123 456 7898</h1>
+          <small>Email : varshil.220202@gmail.com</small>
+        </div>
+
+        <div class="box1">
+          <h3>Customer Services</h3>
+          <div class="flex1">
+            <ul>
+              <li>Help</li>
+              <li>Contact Us</li>
+              <li>Warranty</li>
+              <li>Terms & Conditions</li>
+              <li>Shopping information</li>
+              <li>Gift Vocher</li>
+            </ul>
+            <ul>
+              <li>My Account</li>
+              <li>Order Status </li>
+              <li>Payment</li>
+              <li>Orders </li>
+              <li>Cancellation </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box1">
+          <h3>Let's stay in touch</h3>
+          <div class="input flex1">
+            <input type="email" placeholder="Email Address">
+            <i class="far fa-long-arrow-right"></i>
+          </div>
+          <p>Get Update on sales specials and more</p>
+          <div class="social_media">
+            <i class="fab  fa-facebook-f"></i>
+            <i class="fab  fa-instagram"></i>
+            <i class="fab  fa-twitter"></i>
+            <i class="fab  fa-youtube"></i>
+            <i class="fab  fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body>
+
+</html>
